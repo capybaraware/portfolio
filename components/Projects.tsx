@@ -7,35 +7,14 @@ interface Project {
 
 export default function Projects() {
   const projects: Project[] = [
-    // {
-    //   title: 'E-Commerce Platform',
-    //   description:
-    //     'A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.',
-    //   technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe'],
-    //   link: '#',
-    // },
-    // {
-    //   title: 'Task Management App',
-    //   description:
-    //     'A collaborative task management application with real-time updates and team collaboration features.',
-    //   technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
-    //   link: '#',
-    // },
-    // {
-    //   title: 'Weather Dashboard',
-    //   description:
-    //     'A beautiful weather dashboard with location-based forecasts and interactive maps.',
-    //   technologies: ['Next.js', 'Tailwind CSS', 'Weather API'],
-    //   link: '#',
-    // },
-    // {
-    //   title: 'Social Media Analytics',
-    //   description:
-    //     'Analytics platform for social media metrics with data visualization and reporting tools.',
-    //   technologies: ['React', 'Python', 'Chart.js', 'REST APIs'],
-    //   link: '#',
-    // },
-  ]
+    {
+      title: "AI Chatbot",
+      description:
+        "An AI chatbot using the Qwen/Qwen2.5-0.5B-Instruct model deployed on an AWS Lambda function.",
+      technologies: ["Next.js", "TypeScript", "FastAPI", "Lambda"],
+      link: "#",
+    },
+  ];
 
   return (
     <section
@@ -79,6 +58,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
