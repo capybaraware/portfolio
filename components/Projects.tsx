@@ -12,7 +12,7 @@ export default function Projects() {
       description:
         "An AI chatbot using the Qwen/Qwen2.5-0.5B-Instruct model deployed on an AWS Lambda function.",
       technologies: ["Next.js", "TypeScript", "FastAPI", "Lambda"],
-      link: "#",
+      link: "https://ai-v1-rouge.vercel.app/",
     },
   ];
 
