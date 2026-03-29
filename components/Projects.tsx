@@ -8,11 +8,11 @@ interface Project {
 export default function Projects() {
   const projects: Project[] = [
     {
-      title: "AI Chatbot",
+      title: "FullStack Prep",
       description:
-        "An AI chatbot using the Qwen/Qwen2.5-0.5B-Instruct model deployed on an AWS Lambda function.",
-      technologies: ["Next.js", "TypeScript", "FastAPI", "Lambda"],
-      link: "https://ai-v1-rouge.vercel.app/",
+        "A full-stack interview preparation platform with AI-powered mock interviews, real-time feedback, and progress tracking to help developers land their next role.",
+      technologies: ["Next.js", "TypeScript", "PostgreSQL", "AI/LLM", "Tailwind CSS"],
+      link: "https://fullstackprep.org",
     },
   ];
 
