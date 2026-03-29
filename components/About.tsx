@@ -8,21 +8,12 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
           {/* Left column - photo + label */}
           <div className="lg:col-span-4">
-            <div className="mb-8 lg:sticky lg:top-28">
-              <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl overflow-hidden mb-6 bg-stone-200 dark:bg-stone-800">
-                <img
-                  src="/IMG_1617.jpg"
-                  alt="Richard O"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
-              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-stone-400 dark:text-stone-600 mb-4">
-                About
-              </p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 dark:text-stone-100">
-                The short version
-              </h2>
-            </div>
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-stone-400 dark:text-stone-600 mb-4 lg:sticky lg:top-28">
+              About
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 dark:text-stone-100 lg:sticky lg:top-36">
+              The short version
+            </h2>
           </div>
 
           {/* Right column - content */}
