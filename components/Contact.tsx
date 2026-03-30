@@ -1,29 +1,4 @@
-'use client'
-
-import { useState } from 'react'
-
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! I will get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
-  }
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
 
   const links = [
     { label: 'Email', value: 'orichh@gmail.com', href: 'mailto:orichh@gmail.com' },
@@ -65,70 +40,6 @@ export default function Contact() {
                 </a>
               ))}
             </div>
-          </div>
-
-          <div className="lg:col-span-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-2"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-stone-900 dark:text-stone-100 text-sm transition-colors"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-2"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-stone-900 dark:text-stone-100 text-sm transition-colors"
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-2"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={6}
-                  className="w-full px-4 py-3 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-stone-900 dark:text-stone-100 text-sm transition-colors resize-none"
-                />
-              </div>
-              <button
-                type="submit"
-                className="px-8 py-3.5 bg-stone-900 dark:bg-stone-100 text-stone-100 dark:text-stone-900 rounded-full font-semibold text-sm hover:bg-stone-800 dark:hover:bg-white transition-colors cursor-pointer"
-              >
-                Send Message
-              </button>
-            </form>
           </div>
         </div>
 
